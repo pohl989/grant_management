@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @grant.deadline %>
+</p>
+
+<p>
+  <strong>Internal deadline:</strong>
+  <%= @grant.internal_deadline %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @grant.state %>
+</p>
+
+<p>
+  <strong>Funder:</strong>
+  <%= @grant.funder %>
+</p>
+
+<p>
+  <strong>Program:</strong>
+  <%= @grant.program %>
+</p>
+
+<p>
+  <strong>Priority level:</strong>
+  <%= @grant.priority_level %>
+</p>
+
+<p>
+  <strong>Range min:</strong>
+  <%= @grant.range_min %>
+</p>
+
+<p>
+  <strong>Range max:</strong>
+  <%= @grant.range_max %>
+</p>
+
+<p>
+  <strong>Funded amount:</strong>
+  <%= @grant.funded_amount %>
+</p>
+
+<p>
+  <strong>Previosly awarded:</strong>
+  <%= @grant.previosly_awarded %>
+</p>
+
+<%= link_to 'Edit', edit_grant_path(@grant) %> |
+<%= link_to 'Back', grants_path %>

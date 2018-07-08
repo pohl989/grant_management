@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deadline: 2018-07-08
+  internal_deadline: 2018-07-08
+  state: 1
+  funder: MyString
+  program: MyString
+  priority_level: MyString
+  range_min: 9.99
+  range_max: 9.99
+  funded_amount: 9.99
+  previosly_awarded: false
+
+two:
+  deadline: 2018-07-08
+  internal_deadline: 2018-07-08
+  state: 1
+  funder: MyString
+  program: MyString
+  priority_level: MyString
+  range_min: 9.99
+  range_max: 9.99
+  funded_amount: 9.99
+  previosly_awarded: false

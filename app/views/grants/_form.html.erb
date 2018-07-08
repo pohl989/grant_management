@@ -1,0 +1,67 @@
+<%= form_with(model: grant, local: true) do |form| %>
+  <% if grant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grant.errors.count, "error") %> prohibited this grant from being saved:</h2>
+
+      <ul>
+      <% grant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :deadline %>
+    <%= form.date_select :deadline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :internal_deadline %>
+    <%= form.date_select :internal_deadline %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.number_field :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funder %>
+    <%= form.text_field :funder %>
+  </div>
+
+  <div class="field">
+    <%= form.label :program %>
+    <%= form.text_field :program %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority_level %>
+    <%= form.text_field :priority_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :range_min %>
+    <%= form.text_field :range_min %>
+  </div>
+
+  <div class="field">
+    <%= form.label :range_max %>
+    <%= form.text_field :range_max %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funded_amount %>
+    <%= form.text_field :funded_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :previosly_awarded %>
+    <%= form.check_box :previosly_awarded %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
